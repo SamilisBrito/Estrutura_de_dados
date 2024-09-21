@@ -13,8 +13,6 @@ public class SimplyLinkedList<T> {
 
         if (this.head == null) {
             this.head = node;
-        } else if (this.head.getNext() == null) {
-            this.head.setNext(node);
         } else {
             Node last = getLast();
             last.setNext(node);
